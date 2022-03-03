@@ -1,0 +1,86 @@
+*
+{
+	margin : 0;
+	padding :0;
+	font-family : "open sans", cursive;
+	box-sizing : border-box;
+}
+
+body
+{
+	min-height : 100vh;
+	display : flex;
+	align-items : center;
+	justify-content : center;
+	background-color : #f1f1f1;
+}
+
+.section
+{
+	background : url(prlr/2090286.jpg) no-repeat left;
+	background-size : 55%;
+	background-color : #fdfdfd;
+	overflow : hidden;
+	padding : 100px 0;
+}
+
+.about-content
+{
+	width : 55%;
+	border : 1px solid red;
+	float : right;
+	background-color : #fdfdfd;
+	padding : 100px;
+	text-align : center;
+	box-shadow : 0 10px 10px 6px grey;
+}
+
+.about-content h1
+{
+	margin-bottom : 30px;
+	font-size : 50px;
+}
+
+.text
+{
+	font-size : 13px;
+	color : #545454;
+	line-height : 30px;
+	text-align : justify;
+	margin-bottom : 40px;
+	font-family : "open sans", sans-serif;
+}
+
+
+@media screen and (max-width:1200px)
+{
+	.inner-container
+	{
+		padding : 80px;
+	}
+}
+
+@media screen and (max-width:1000px)
+{
+	.section 
+	{
+		background-size : 100%;
+		padding : 100px 40px;
+	}
+	.about-content
+	{
+		width : 100%;
+	}
+}
+
+@media screen and (max-width:600px)
+{
+	.section 
+	{
+		padding : 0;
+	}
+	.about-content
+	{
+		padding : 60px;
+	}
+}

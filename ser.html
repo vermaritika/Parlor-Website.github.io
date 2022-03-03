@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title> About Us </title>
+<link rel="stylesheet" href="ser.css">
+<link rel="stylesheet" href="nav.css">
+</head>
+<body onload="myfunction()">
+
+<script>
+	function myfunction()
+	{
+		alert("Page is loaded");
+	}
+</script>
+
+	<!-- nav bar -->
+    <nav id="nav" class="nav-pink">
+      <div class="nav__header">
+        <h1>Parlor Era</h1>
+      </div>
+      <ul class="nav__ul">
+        <li class="nav__li"><a href="home.html" class="nav__a">Home</a></li>
+        <li class="nav__li"><a href="gallery.html" class="nav__a">Gallery</a></li>
+        <li class="nav__li"><a href="services.html" class="nav__a">Services</a></li>
+        <li class="nav__li"><a href="bb.html" class="nav__a">Booking</a></li>
+        <li class="nav__li"><a href="feedback.html" class="nav__a">Feedback</a></li>
+      </ul>
+    </nav>
+    <script>
+      const nav = document.getElementById("nav");
+
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 0) {
+          nav.classList.remove("nav-pink");
+          nav.classList.add("nav-transparent");
+        } else {
+          nav.classList.add("nav-pink");
+          nav.classList.remove("nav-transparent");
+        }
+      });
+    </script>
+	<!-- end of nav bar -->
+
+	<!-- about section -->
+	<div class="section">
+		<div class="about-content">
+			<h1> Services </h1>
+			<p class="text">We offer a full range of salon treatments and styling services provided by a team of professional stylists, all in a clean air environment.They are familiar with the correct methods of moisturizing and nourishing your skin so that it becomes soft, clean and attractive.Treat yourself with a visit to the beauty salon at least once a month, if you cannot afford to do it more often. The professional beauticians can give very useful information how to improve the condition of your skin and hair. For example, it may turn our that the cosmetics products you have been using are not the best for you.Getting professional hair care is one of the greatest advantages of going to a beauty salon.
+			</p>
+		</div>
+	</div>
+	<!-- End of services section -->
+	  <div class="m">
+	  </div>
+
+</body>
+</html>

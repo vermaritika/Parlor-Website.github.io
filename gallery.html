@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title> Gallery </title>
+
+<link rel="stylesheet" type="text/css" href="gallery.css">
+<link rel="stylesheet" href="nav.css">
+
+</head>
+<body onload="myfunction()">
+<script>
+	function myfunction()
+	{
+		alert("Page is loaded");
+	}
+</script>
+
+<div class="min">
+	<div class="para">
+		<h1 id="one">Image Gallery </h1>
+			<p>When it comes to beauty, the first thing that people notice is your features. The skin on your face will look radiant and young with the help of a professional beautician. Here are some pictures that could steal your heart! </p>
+		
+			<a href="#image" id="ab"> View Images</a>
+	</div>
+</div>	
+	
+	
+		<div class="image" id="image">
+			<h3><i>Let your inner beauty rule the outer world !</i></h3>
+			<img src="prlr/facial1.jpg">
+			<img src="prlr/bridal3.jpg">
+			<img src="prlr/facial2.jpg">
+			<img src="prlr/bridal.jpg">
+			<img src="prlr/strght3.jpg">
+			<img src="prlr/bridal2.jpg">
+			<img src="prlr/hair6.jpg">
+			<img src="prlr/hair.jpg">
+			<img src="prlr/hair2.jpg">
+			<img src="prlr/bridal3.jpg">
+			<img src="prlr/hair5.jpg">
+			<img src="prlr/bridal.jpg">
+			
+			
+		</div>
+
+	<!-- nav bar -->
+    <nav id="nav" class="nav-pink">
+      <div class="nav__header">
+        <h1>Parlor Era</h1>
+      </div>
+      <ul class="nav__ul">
+        <li class="nav__li"><a href="home.html" class="nav__a">Home</a></li>
+        <li class="nav__li"><a href="about.html" class="nav__a">About</a></li>
+        <li class="nav__li"><a href="services.html" class="nav__a">Services</a></li>
+        <li class="nav__li"><a href="bb.html" class="nav__a">Booking</a></li>
+        <li class="nav__li"><a href="feedback.html" class="nav__a">Feedback</a></li>
+      </ul>
+    </nav>
+    <script>
+      const nav = document.getElementById("nav");
+
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 0) {
+          nav.classList.remove("nav-pink");
+          nav.classList.add("nav-transparent");
+        } else {
+          nav.classList.add("nav-pink");
+          nav.classList.remove("nav-transparent");
+        }
+      });
+    </script>
+<!-- end of nav bar -->
+
+</body>
+</html>

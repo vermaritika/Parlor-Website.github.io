@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="nav.css"/>
+    <link rel="stylesheet" href="home.css"/>
+
+<head>
+	<title> HOME </title>
+</head>
+<body>
+<script>
+
+alert("Welcome to our website");
+
+		var str = prompt("What's ur name : ", "")
+			if(str == "")
+				{
+					alert("Please enter your name");
+					prompt("What's ur name : ", "")
+				}
+			else
+				alert("Hie," + str + "!!"  + "Hope you'll like my website!");
+</script>
+	
+	
+<section class="container">
+		<div id="img" class="top">
+			<img src= "prlr/1937392.jpg">
+		</div>
+</section>
+
+	<!-- Script for the slide -->
+	<script>
+	    var images = ['prlr/2090289.jpg', 'prlr/2090286.jpg' , 'prlr/bridal4.jpg', 'prlr/featured-image1.jpg'];
+	    var x = 0;
+	    var imgs = document.getElementById('img');
+	    setInterval(slider, 3000);
+	    function slider() {
+	      if (x < images.length) {
+	        x = x + 1;
+	      } else {
+	        x = 1;
+	      }
+	      imgs.innerHTML = "<img src=" + images[x - 1] + ">";
+	    }
+	</script>
+	
+	
+<!-- nav bar -->
+    <nav id="nav" class="nav-pink">
+      <div class="nav__header">
+        <h2 style="font-family:cursive; font-size:25px; color:black;">Parlor Era</h2>
+      </div>
+      <ul class="nav__ul">
+        <li class="nav__li"><a href="about.html" class="nav__a">About</a></li>
+        <li class="nav__li"><a href="gallery.html" class="nav__a">Gallery</a></li>
+        <li class="nav__li"><a href="services.html" class="nav__a">Services</a></li>
+        <li class="nav__li"><a href="bb.html" class="nav__a">Booking</a></li>
+        <li class="nav__li"><a href="feedback.html" class="nav__a">Feedback</a></li>
+      </ul>
+    </nav>
+<!-- script for nav bar -->
+    <script>
+      const nav = document.getElementById("nav");
+
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 0) {
+          nav.classList.remove("nav-pink");
+          nav.classList.add("nav-transparent");
+        } else {
+          nav.classList.add("nav-pink");
+          nav.classList.remove("nav-transparent");
+        }
+      });
+    </script>
+<!-- end of nav bar -->
+
+<div class="para">
+			<div class="one">
+				<p class="text"><i>Dress Up Your Nails !</i></p>
+			</div>
+			<div class="two">
+				<p class="text"><i>Let's Your HAIR Do The Talking !</i></p>
+			</div>
+			<div class="three">
+				<p class="text"><i>Get Glowing, The World Needs Your Magic !</i></p>
+			</div>
+			<div class="four">
+				<p class="text"><i>Make Time For Your Skin !</i></p>
+			</div>
+			<div class="five">
+				<p class="text"><i>Facials Are Like YOGA For Your Skin !</i></p>
+			</div>
+</div>
+	
+	<div class="my">
+		<h2>Why Us?</h2>
+		<p>We are providing you the best quality of services in a very fresh environment. Our aim is to provide our patrons with a wonderful beauty atmosphere and beautiful results. Here are some reasons that we think you should stop by threads. Perfect Atmosphere, Uniqueness, Best Customer Service, Trained Beauty Experts, Makeup Artist Available.</p>
+	</div>
+</body>
+</html>

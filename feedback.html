@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+		<meta charset="utf-8">
+		<title>Responsive Contact us Form </title>
+		<link rel="stylesheet" href="feedback.css">
+		<link rel="stylesheet" href="nav.css"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<script>
+			function myfun(){
+			alert("Thanks for your feedback");
+			}
+		</script>
+	
+  </head>
+<body onload="myfunction()">
+
+<script>
+	function myfunction()
+	{
+		alert("Page is loaded");
+	}
+</script>
+
+<!-- nav bar -->
+    <nav id="nav" class="nav-pink">
+      <div class="nav__header">
+        <h1>Parlor Era</h1>
+      </div>
+      <ul class="nav__ul">
+        <li class="nav__li"><a href="home.html" class="nav__a">Home</a></li>
+        <li class="nav__li"><a href="about.html" class="nav__a">About</a></li>
+        <li class="nav__li"><a href="gallery.html" class="nav__a">Gallery</a></li>
+        <li class="nav__li"><a href="services.html" class="nav__a">Services</a></li>
+        <li class="nav__li"><a href="bb.html" class="nav__a">Booking</a></li>
+      </ul>
+    </nav>
+    <script>
+      const nav = document.getElementById("nav");
+
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 0) {
+          nav.classList.remove("nav-pink");
+          nav.classList.add("nav-transparent");
+        } else {
+          nav.classList.add("nav-pink");
+          nav.classList.remove("nav-transparent");
+        }
+      });
+    </script>
+<!-- end of nav bar -->
+
+
+	<div class="feed">
+		<h2 style="font-family:cursive;">Your Feedback helps us to keep going!</h2>
+		<p style="padding-top : 20px; justify-content:center; line-height:2rem; word-spacing:2px;">Our mission is to meet your needs and expectations,</br>so feel free to contact us for any feedback or questions.</p>
+	</div>
+    <div class="container">
+		<div class="text">
+			Give Your Feedback!
+		</div>
+		
+		<form action="#">
+			<div class="form-row">
+				<div class="input-data">
+					<input type="text" required>
+						<div class="underline"></div>
+					<label for="">First Name</label>
+				</div>
+				
+				<div class="input-data">
+					<input type="text" required>
+						<div class="underline"></div>
+					<label for="">Last Name</label>
+				</div>
+			</div>
+			
+			<div class="form-row">
+				<div class="input-data">
+					<input type="text" required>
+						<div class="underline"></div>
+					<label for="">Email Address</label>
+				</div>
+				
+					<div class="input-data">
+						<input type="tel" required>
+							<div class="underline"></div>
+						<label for="">Contact Number</label>
+					 </div>
+			</div>
+			<div class="form-row">
+					<div class="input-data">
+						<input type="text" required>
+							<div class="underline"></div>
+						<label for="">Write your message</label>
+					 </div>
+			</div>	 
+		
+          
+		<div class="form-row submit-btn">
+			<div class="input-data">
+				<div class="inner"></div>
+					<input onclick="myfun()" type="submit" value="submit">
+			</div>
+        </div>
+		
+			</form>
+		</div>
+
+  </body>
+</html>
